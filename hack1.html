@@ -10,38 +10,45 @@
     <meta name="author" content="Dhaval Bhatt">
     <meta http-equiv="refresh" content="30">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/Users/macbook/Documents/CodingDojo/Hackathon/hack1.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <form>
+    <form class="form-control">
         <div class="container">
             <div class="header">
                 <h1> Instant Invoice </h1>
-                <input type="text" name="Company Name" placeholder="Company Name"></input>
-            </div>
-            <div class="address">
-                <input type="text" name="Street Address" placeholder="Street Address"></input>
-                <input type="text" name="CityStateZip" placeholder="City, ST, Zip"></input>
-                <input type="number" name="phone number" placeholder="Phone #"></input>
-            </div>
-            <div class="table1">
-                <table>
-                    <tr>
-                        <th> Invoice # </th>
-                        <th> Date </th>
-                    </tr>
-                    <tr>
-                        <td><input type="number"></input>
-                        </td>
-                        <td><input type="date"></input>
-                        </td>
-                    </tr>
-                </table>
+                <hr>
+                
             </div>
 
+            <div id="secondHeader">
+                <div class="address">
+                <input type="text" name="Company Name" placeholder="Company Name"></input>
+                    <input type="text" name="Street Address" placeholder="Street Address"></input>
+                    <input type="text" name="CityStateZip" placeholder="City, ST, Zip"></input>
+                    <input type="number" name="phone number" placeholder="Phone #"></input>
+                </div>
+                <div class="table1">
+                    <table>
+                        <tr>
+                            <th> Invoice # </th>
+                            <th> Date </th>
+                        </tr>
+                        <tr>
+                            <td><input type="number" value="001"></input>
+                            </td>
+                            <td><input type="date"></input>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            
             <div class="BillTo">
-                <p> Bill To </p>
+                <h2> Bill To </h2>
             </div>
             <div class="BillToBody">
                 <input type="text" placeholder="Customer Name"></input>
@@ -52,18 +59,24 @@
                 <input type="email" placeholder="Customer Email"></input>
             </div>
             <div class="invoiceBody">
-                <table>
+                <table class="gtable">
                     <tr>
-                        <th>Description</th>
-                        <th>Amount</th>
+                        <th class="desc">Description</th>
+                        <th class="quant">Quantity</th>
+                        <th class="price">Price</th>
+                        <th class="total">Total <br> <sup>(quantity*price)</sup></th>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <textarea></textarea>
+                        </td>
+                        <td><textarea></textarea></td>
+                        <td><textarea></textarea></td>
+                        <td><textarea></textarea></td>
                     </tr>
                     <tr id="bottomrow">
-                        <td>"Thank you for your business"</td>
-                        <td>Total</td>
+                        <!-- <td>"Thank you for your business"</td> -->
+                        <td><h2>Total</h2> </td>
 
                     </tr>
                 </table>
@@ -71,6 +84,9 @@
             </div>
 
 
+        <div class="buttonCOnt">
+            <button>print to PDF</button>            
+        </div>
 
         </div>
 
