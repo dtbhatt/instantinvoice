@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Invoice To PDF</title>
+
+    <meta charset="utf-8">
+    <title>Project Julia</title>
+    <meta name="keywords" content="invoice, pdf, invoice to PDF, PDF Convert, Independent Contractor, contractor, payment">
+    <meta name="description" content="Instant invoice">
+    <meta name="author" content="Dhaval Bhatt">
+    <meta http-equiv="refresh" content="30">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Users/macbook/Documents/CodingDojo/Hackathon/hack1.css">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <div class="header">
+                <h1> Instant Invoice </h1>
+                <input type="text" name="Company Name" placeholder="Company Name"></input>
+            </div>
+            <div class="address">
+                <input type="text" name="Street Address" placeholder="Street Address"></input>
+                <input type="text" name="CityStateZip" placeholder="City, ST, Zip"></input>
+                <input type="number" name="phone number" placeholder="Phone #"></input>
+            </div>
+            <div class="table1">
+                <table>
+                    <tr>
+                        <th> Invoice # </th>
+                        <th> Date </th>
+                    </tr>
+                    <tr>
+                        <td><input type="number"></input>
+                        </td>
+                        <td><input type="date"></input>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="BillTo">
+                <p> Bill To </p>
+            </div>
+            <div class="BillToBody">
+                <input type="text" placeholder="Customer Name"></input>
+                <input type="text" placeholder="Cust Company Name"></input>
+                <input type="text" placeholder="Cust. Street Addres"></input>
+                <input type="text" placeholder="Cust. City, ST, ZIP"></input>
+                <input type="number" placeholder="Customer Phone"></input>
+                <input type="email" placeholder="Customer Email"></input>
+            </div>
+            <div class="invoiceBody">
+                <table>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="bottomrow">
+                        <td>"Thank you for your business"</td>
+                        <td>Total</td>
+
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </form>
+
+</html>
